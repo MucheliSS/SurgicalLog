@@ -1,0 +1,26 @@
+# SurgicalLog
+
+This project provides a Streamlit app for logging surgical cases and reviewing them in a dashboard.
+
+## Running locally
+
+1. Create and activate a Python environment.
+2. Install dependencies:
+   ```bash
+   pip install streamlit pandas
+   ```
+3. Start the app:
+   ```bash
+   streamlit run app.py
+   ```
+4. Open the URL shown in the terminal to interact with the logbook.
+
+Log data is stored in **`surgical_log.csv`** in the project directory. The CSV file is not version-controlled and will be recreated if missing.
+
+## Deploying on Streamlit Cloud
+
+1. Push this repository to GitHub or another supported source control provider.
+2. Sign in to [Streamlit Cloud](https://streamlit.io/cloud) and create a new app, selecting your repository and `app.py` as the entry point.
+3. Once deployed, the app runs in the cloud. The default setup stores entries in `surgical_log.csv` within the ephemeral container.
+
+For production deployments where data must persist or be shared across users, connect the app to a persistent backend (e.g., a database or cloud storage) instead of relying solely on the CSV file.
