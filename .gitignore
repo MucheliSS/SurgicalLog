@@ -1,0 +1,21 @@
+# Data files
+surgical_log.csv
+surgical_log.xlsx
+*.csv
+*.xlsx
+*.log
+
+# Python artifacts
+__pycache__/
+*.py[cod]
+
+# Virtual environments
+venv/
+env/
+.venv/
+
+# Streamlit configuration
+.streamlit/
+
+# OS files
+.DS_Store
